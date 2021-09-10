@@ -1,0 +1,159 @@
+body {
+    font-family: $defaultFont;
+}
+
+.MHero {
+    background-image: url(../../web/img/jaguar-etype.jpg);
+    height: $fullwidth - 50vh;
+    background-size: cover;
+    background-position-y: $fullwidth - 60%;
+    background-repeat: no-repeat;
+    display: flex;
+    .bg-light {
+        background-color: rgba($color: #000000, $alpha: 0) !important;
+    }
+    .navbar {
+        align-items: flex-end;
+        .container-fluid {
+            display: flex;
+            justify-content: space-between !important;
+            width: $fullwidth - 5vw !important;
+            .nav-link, h1 {
+                color: $white !important; 
+                font-family: $myFont;
+            }
+            h1 {
+                font-size: $fontSize + 40px;
+            }
+            .navbar-collapse{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.row {
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.separator {
+    @include lineTextLine;
+}
+
+.upcomingShows, .earlyBird, .regularBird {
+    background-color: $grayBackgroundColor;
+    margin: $fullwidth - 80px;
+}
+
+.earlyBird, .regularBird {
+    @include flexColumn;
+    height: $fullwidth + 150px;
+    align-items: center;
+    border: $standardBorder;
+    margin: 0 0 40px 0;
+    .btn-primary {
+        background-image: linear-gradient(#4CBC4C, #409240);
+        border-bottom: 5px solid #008000;
+    }        
+    .btn-secondary {
+        background-image: linear-gradient(#D4D4D4, #BBBBBB);
+        border-bottom: #AAAAAA;
+    }
+    h3 {
+        font-size: $fontSize + 10px;
+    }
+    button {
+        width: $fullwidth - 50%;
+        height: $fullwidth - 50px;
+        border: none;
+        box-shadow: $buttonShadow;
+        border-radius: $fullwidth - 98px;
+    }
+}
+
+.regularBird h3, .regularBird p {
+    color: $inactiveText;
+}
+
+.card {
+    padding: $null !important;  
+    background-color: $grayBackgroundColor;
+    border-radius: $null;
+    figcaption {
+        padding: 2px 7px;
+    }
+}
+
+.mList {
+    @include flexColumn;
+    list-style: none !important;
+    padding-left: $null;
+    border-top: $standardBorder;
+    border-left: $standardBorder;
+    li {
+        border-bottom: $standardBorder;
+        border-right: $standardBorder;
+        background-color: $grayBackgroundColor;
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 5px !important;
+        .upShowDate {
+            @include flexColumn;
+            flex: 1;
+            padding: 0 10px;
+            text-align: center;
+            font-size: $fontSize + 17px;
+            line-height: 30px !important;
+            font-family: $myFont;
+            .redText {
+                color: rgb(209, 10, 10);
+                font-size: $fontSize - 3px;
+                font-weight: bold;
+                font-family: $defaultFont;
+            }
+        }
+        .showDesc {
+            padding: 0 10px;
+            flex: 8;
+            border-left: $standardBorder;
+            h3 {    
+                font-size: $fontSize + 2px;
+                font-weight: 550;  
+                line-height: 10px;
+                padding-top: 15px;
+            }
+        }
+    }   
+}
+
+.mjustifycontent {
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.Mfooter {
+    background-color: #313131;
+    color: $white;
+    width: $fullwidth;
+    height: $fullwidth - 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        padding: $null;
+        margin: $null;
+    }
+    .MSocialIcons {
+        padding-right: 20px;
+        img {
+            margin: 0 10px;
+            width: 30px;
+        }
+    }
+}
+
+

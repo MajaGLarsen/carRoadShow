@@ -1,0 +1,30 @@
+//Bootstrap nescessary 
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+
+//Bootstrap ekstra 
+@import "../bootstrap/scss/utilities";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/containers";
+@import "../bootstrap/scss/grid";
+@import "../bootstrap/scss/helpers";
+@import "../bootstrap/scss/nav";
+@import "../bootstrap/scss/navbar";
+@import "../bootstrap/scss/dropdown";
+@import "../bootstrap/scss/tables";
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+//Bootstrap optional
+@import "../bootstrap/scss/card";
+@import "../bootstrap/scss/buttons";
+
+
+//my styles
+@import "variablesMixins";
+@import "main";
